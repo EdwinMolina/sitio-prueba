@@ -77,3 +77,30 @@ body{
 
     }
 }
+/*>>>>>>>>> HERO <<<<<<<<< */
+.body{
+    padding: 6rem 0;
+}
+.body__content{
+    display: grid;
+    row-gap: 2rem;
+}
+.body__description{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+.body__img{
+    width: 100%;
+    margin: 0 auto;
+}
+@media screen and (min-width:768px){
+    .body__content{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: column;
+        column-gap: 2rem;
+        align-items: center;
+    }
+    .body__img{
+        grid-column: 1/2;
+    }
+}
